@@ -76,7 +76,7 @@
             alert("Feedback can't be blank");
             return false;
         }
-        else if (atposition < 1 || dotposition < atposition + 2 || dotposition + 2 >= email.length) {
+        else if (atposition < 1 || dotposition < atposition + 2 || dotposition + 2 >= email.length || email == null || email == "") {
             alert("Please enter a valid e-mail address");
             return false;
         }
